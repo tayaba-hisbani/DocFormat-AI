@@ -281,8 +281,8 @@ def analyze_document(
         custom_requirements=custom_requirements
     )
 
-    response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+   response = client.chat.completions.create(
+    model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
